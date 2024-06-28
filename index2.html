@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/Login form</title> 
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="registerSection">
+            <h2>Registration</h2>
+            <form id="registerForm">
+                <div class="input-box">
+                    <input type="text" id="registerName" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="registerEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="registerPassword" placeholder="Create password" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="registerConfirmPassword" placeholder="Confirm password" required>
+                </div>
+                <div class="policy">
+                    <input type="checkbox" id="terms" required>
+                    <h3>I accept all terms & condition</h3>
+                </div>
+                <div class="input-box button">
+                    <input type="submit" value="Register Now">
+                </div>
+                <div class="text">
+                    <h3>Already have an account? <a href="#" onclick="toggleForms()">Login now</a></h3>
+                </div>
+            </form>
+        </div>
+
+        <div id="loginSection" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <input type="text" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box button">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="text">
+                    <h3>Don't have an account? <a href="#" onclick="toggleForms()">Register now</a></h3>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
